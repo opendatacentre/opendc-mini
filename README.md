@@ -1,2 +1,5 @@
-# opendc-mini
-Open Datacentre Mini teaches how to build the components of a CI/CD pipeline using community resources such as Helm Charts.
+# Open Datacenter Mini
+
+---
+
+Open Datacentre Mini (opendc-mini) teaches how to build the components of a CI/CD pipeline using Kubernetes community resources, such as Kubicorn and Helm Charts.
