@@ -1,22 +1,22 @@
 {
-    "root"       : ".",
-    "title"      : "Open Datacentre Mini",
+    "root": "docs",
+    "title": "Open Datacentre Mini",
     "description": "This book contains the Open Datacentre Mini book that describes how to build a small datacentre for CI/CD.",
-    "author"     : "Cito Pro",
-    "lang"       : "en",
-    "gitbook"    : ">= 3.2.0",
-    "plugins"    : ["mermaid-gb3",
-                    "expandable-chapters",
-                    "page-toc",
-                    "back-to-top-button"],
+    "author": "Cito Pro",
+    "lang": "en",
+    "gitbook": ">= 3.2.0",
+    "plugins": ["mermaid-gb3",
+        "expandable-chapters",
+        "page-toc",
+        "back-to-top-button"
+    ],
     "pluginsConfig": {
-      "mermaid-gb3": {
-        "theme": "forest"
-      },
-      "page-toc": {
-        "selector": ".markdown-section h2, .markdown-section h3",
-        "position": "top"
-      }  
+        "mermaid-gb3": {
+            "theme": "forest"
+        },
+        "page-toc": {
+            "selector": ".markdown-section h2, .markdown-section h3",
+            "position": "top"
+        }
     }
 }
-
