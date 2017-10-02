@@ -1,0 +1,142 @@
+{
+  "version": 1,
+  "width": 167,
+  "height": 49,
+  "duration": 10.63364,
+  "command": null,
+  "title": null,
+  "env": {
+    "TERM": "xterm-256color",
+    "SHELL": "/bin/bash"
+  },
+  "stdout": [
+    [
+      0.009693,
+      "\u001b[?1034hbash-3.2$ "
+    ],
+    [
+      0.752785,
+      "k"
+    ],
+    [
+      0.177876,
+      "u"
+    ],
+    [
+      0.146179,
+      "b"
+    ],
+    [
+      0.044795,
+      "e"
+    ],
+    [
+      0.292811,
+      "t"
+    ],
+    [
+      0.078727,
+      "a"
+    ],
+    [
+      0.214555,
+      "i"
+    ],
+    [
+      0.145648,
+      "l"
+    ],
+    [
+      0.146037,
+      " "
+    ],
+    [
+      0.494923,
+      "k"
+    ],
+    [
+      0.168799,
+      "u"
+    ],
+    [
+      0.123541,
+      "b"
+    ],
+    [
+      0.045302,
+      "e"
+    ],
+    [
+      0.281282,
+      "-"
+    ],
+    [
+      0.202507,
+      "d"
+    ],
+    [
+      0.202264,
+      "n"
+    ],
+    [
+      0.045027,
+      "s"
+    ],
+    [
+      0.191231,
+      "\r\n"
+    ],
+    [
+      1.5,
+      "Unable to connect to the server: net/http: TLS handshake timeout\r\n"
+    ],
+    [
+      0.321083,
+      "Will tail 3 logs...\r\n"
+    ],
+    [
+      3.2e-05,
+      "\u001b[31mkube-dns-2712020956-lzp4s kubedns\u001b(B\u001b[m\r\n\u001b[32mkube-dns-2712020956-lzp4s dnsmasq\u001b(B\u001b[m\r\n\u001b[33mkube-dns-2712020956-lzp4s sidecar\u001b(B\u001b[m\r\n"
+    ],
+    [
+      1.5,
+      "Unable to connect to the server: net/http: TLS handshake timeout\r\n"
+    ],
+    [
+      0.006841,
+      "Unable to connect to the server: net/http: TLS handshake timeout\r\n"
+    ],
+    [
+      1.5,
+      "^C"
+    ],
+    [
+      0.000444,
+      "\r\n"
+    ],
+    [
+      0.000113,
+      "bash-3.2$ "
+    ],
+    [
+      1.5,
+      "e"
+    ],
+    [
+      0.168461,
+      "x"
+    ],
+    [
+      0.112351,
+      "i"
+    ],
+    [
+      0.158146,
+      "t"
+    ],
+    [
+      0.100865,
+      "\r\n"
+    ]
+  ]
+}

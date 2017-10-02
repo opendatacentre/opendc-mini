@@ -7,6 +7,7 @@
 
 ### Labs
 
+* [Local Setup](labs/local_setup.md)
 * [Wrap Up](labs/wrap_up.md)
 
 ### Reference

@@ -8,7 +8,8 @@
     "plugins": ["mermaid-gb3",
         "expandable-chapters",
         "page-toc",
-        "back-to-top-button"
+        "back-to-top-button",
+        "scripts-styles"
     ],
     "pluginsConfig": {
         "mermaid-gb3": {
@@ -17,6 +18,14 @@
         "page-toc": {
             "selector": ".markdown-section h2, .markdown-section h3",
             "position": "top"
+        },
+        "scripts-styles": {
+            "js": [
+                "js/asciinema-player.js"
+            ],
+            "css": [
+                "css/asciinema-player.css"
+            ]
         }
     }
 }
