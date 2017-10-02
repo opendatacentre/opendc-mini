@@ -182,7 +182,9 @@ $ helm upgrade docker-registry --set persistentVolume.enabled=true,persistentVol
 
 Helm [Chart](https://github.com/kubernetes/charts/tree/master/stable/artifactory)
 
-
+```
+$ helm install --name artifactory --namespace utils -f charts-values/artifactory/values.yaml stable/artifactory --version 6.0.0
+```
 
 
 
