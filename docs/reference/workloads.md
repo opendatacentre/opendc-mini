@@ -91,7 +91,7 @@ $ k get secret rook-rook-user -o json | jq '.metadata.namespace = "utils"' | kub
 *Helm [Chart](https://github.com/kubernetes/charts/tree/master/stable/nginx-ingress)*
 
 ```console
-$ helm install --name ingress --namespace utils kubernetes-charts/nginx-ingress --version 0.7.2`
+$ helm install --name ingress --namespace utils stable/nginx-ingress --version 0.7.2
 ```
 
 *Need to add metrics*

@@ -133,19 +133,7 @@ alias kt=`which kubetail`
 
 ## Example
 
-example (using asciinema, which will show the colours) of:
-* kctx to see contexts and then select opendc.local
-* k to see Kubernetes cluster version.
-* kns to see Namespaces and then select kube-system.
-* k to get Pods
-* Helm to install ???
-* k to get Pods
-* kt to tail  ???
+The following video demonstrates the use of the installed commands.
 
-This is an example video of using the aformentioned capabilties.
-
-Video talk:
-	Goto the web in the description to learn how to install the tools.
-
-{% youtube %}dxP4QEA7EVU{% endyoutube %}
+{% youtube %}xuGRzI6kXfw{% endyoutube %}
 
