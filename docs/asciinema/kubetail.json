@@ -1,142 +1,374 @@
 {
-  "version": 1,
-  "width": 167,
-  "height": 49,
-  "duration": 10.63364,
-  "command": null,
-  "title": null,
-  "env": {
-    "TERM": "xterm-256color",
-    "SHELL": "/bin/bash"
-  },
-  "stdout": [
-    [
-      0.009693,
-      "\u001b[?1034hbash-3.2$ "
-    ],
-    [
-      0.752785,
-      "k"
-    ],
-    [
-      0.177876,
-      "u"
-    ],
-    [
-      0.146179,
-      "b"
-    ],
-    [
-      0.044795,
-      "e"
-    ],
-    [
-      0.292811,
-      "t"
-    ],
-    [
-      0.078727,
-      "a"
-    ],
-    [
-      0.214555,
-      "i"
-    ],
-    [
-      0.145648,
-      "l"
-    ],
-    [
-      0.146037,
-      " "
-    ],
-    [
-      0.494923,
-      "k"
-    ],
-    [
-      0.168799,
-      "u"
-    ],
-    [
-      0.123541,
-      "b"
-    ],
-    [
-      0.045302,
-      "e"
-    ],
-    [
-      0.281282,
-      "-"
-    ],
-    [
-      0.202507,
-      "d"
-    ],
-    [
-      0.202264,
-      "n"
-    ],
-    [
-      0.045027,
-      "s"
-    ],
-    [
-      0.191231,
-      "\r\n"
-    ],
-    [
-      1.5,
-      "Unable to connect to the server: net/http: TLS handshake timeout\r\n"
-    ],
-    [
-      0.321083,
-      "Will tail 3 logs...\r\n"
-    ],
-    [
-      3.2e-05,
-      "\u001b[31mkube-dns-2712020956-lzp4s kubedns\u001b(B\u001b[m\r\n\u001b[32mkube-dns-2712020956-lzp4s dnsmasq\u001b(B\u001b[m\r\n\u001b[33mkube-dns-2712020956-lzp4s sidecar\u001b(B\u001b[m\r\n"
-    ],
-    [
-      1.5,
-      "Unable to connect to the server: net/http: TLS handshake timeout\r\n"
-    ],
-    [
-      0.006841,
-      "Unable to connect to the server: net/http: TLS handshake timeout\r\n"
-    ],
-    [
-      1.5,
-      "^C"
-    ],
-    [
-      0.000444,
-      "\r\n"
-    ],
-    [
-      0.000113,
-      "bash-3.2$ "
-    ],
-    [
-      1.5,
-      "e"
-    ],
-    [
-      0.168461,
-      "x"
-    ],
-    [
-      0.112351,
-      "i"
-    ],
-    [
-      0.158146,
-      "t"
-    ],
-    [
-      0.100865,
-      "\r\n"
+    "version": 1,
+    "width": 167,
+    "height": 49,
+    "duration": 14.563217,
+    "command": null,
+    "title": null,
+    "env": {
+        "TERM": "xterm-256color",
+        "SHELL": "/bin/bash"
+    },
+    "stdout": [
+        [
+            0.009542,
+            "\u001b[?1034hbash-3.2$ "
+        ],
+        [
+            0.862668,
+            "k"
+        ],
+        [
+            0.168071,
+            "u"
+        ],
+        [
+            0.168728,
+            "b"
+        ],
+        [
+            0.056202,
+            "e"
+        ],
+        [
+            0.28123,
+            "t"
+        ],
+        [
+            0.41645,
+            "a"
+        ],
+        [
+            0.123486,
+            "i"
+        ],
+        [
+            0.19143,
+            "l"
+        ],
+        [
+            0.168727,
+            " "
+        ],
+        [
+            1.057685,
+            "k"
+        ],
+        [
+            0.168543,
+            "u"
+        ],
+        [
+            0.146415,
+            "b"
+        ],
+        [
+            0.044822,
+            "e"
+        ],
+        [
+            0.416383,
+            "-"
+        ],
+        [
+            0.517475,
+            "d"
+        ],
+        [
+            0.191262,
+            "n"
+        ],
+        [
+            0.056048,
+            "s"
+        ],
+        [
+            0.168889,
+            " "
+        ],
+        [
+            0.281224,
+            "-"
+        ],
+        [
+            0.247699,
+            "n"
+        ],
+        [
+            0.078539,
+            " "
+        ],
+        [
+            0.236341,
+            "k"
+        ],
+        [
+            0.19114,
+            "u"
+        ],
+        [
+            0.168979,
+            "b"
+        ],
+        [
+            0.044774,
+            "e"
+        ],
+        [
+            0.382615,
+            "-"
+        ],
+        [
+            0.112684,
+            "s"
+        ],
+        [
+            0.134717,
+            "y"
+        ],
+        [
+            0.045132,
+            "s"
+        ],
+        [
+            0.101063,
+            "t"
+        ],
+        [
+            0.033677,
+            "e"
+        ],
+        [
+            0.191431,
+            "m"
+        ],
+        [
+            0.51809,
+            "\r\n"
+        ],
+        [
+            1.5,
+            "Will tail 6 logs...\r\n"
+        ],
+        [
+            8.1e-05,
+            "\u001b[31mkube-dns-2712020956-g0tj5 kubedns\u001b(B\u001b[m\r\n\u001b[32mkube-dns-2712020956-g0tj5 dnsmasq\u001b(B\u001b[m\r\n"
+        ],
+        [
+            2.7e-05,
+            "\u001b[33mkube-dns-2712020956-g0tj5 sidecar\u001b(B\u001b[m\r\n\u001b[34mkube-dns-2712020956-lzp4s kubedns\u001b(B\u001b[m\r\n\u001b[35mkube-dns-2712020956-lzp4s dnsmasq\u001b(B\u001b[m\r\n\u001b[36mkube-dns-2712020956-lzp4s sidecar\u001b(B\u001b[m\r\n"
+        ],
+        [
+            1.5,
+            "\u001b[31m[kube-dns-2712020956-g0tj5 kubedns] I1003 22:22:57.311602       1 dns.go:264] New service: kubernetes-dashboard \u001b(B\u001b[m\r\n\u001b[31m[kube-dns-2712020956-g0tj5 kubedns] I1003 22:22:57.311724       1 dns.go:264] New service: kubernetes \u001b(B\u001b[m\r\n"
+        ],
+        [
+            8e-05,
+            "\u001b[31m[kube-dns-2712020956-g0tj5 kubedns] I1003 22:22:57.311756       1 dns.go:462] Added SRV record &{Host:kubernetes.default.svc.cluster.local. Port:443 Priority:10 Weight:10 Text: Mail:false Ttl:30 TargetStrip:0 Group: Key:} \u001b(B\u001b[m\r\n"
+        ],
+        [
+            7.9e-05,
+            "\u001b[31m[kube-dns-2712020956-g0tj5 kubedns] I1003 22:22:57.311788       1 dns.go:264] New service: prometheus-prometheus-kube-state-metrics \u001b(B\u001b[m\r\n"
+        ],
+        [
+            0.000113,
+            "\u001b[31m[kube-dns-2712020956-g0tj5 kubedns] I1003 22:22:57.311817       1 dns.go:494] Added SRV record &{Host:3335663562663330.prometheus-prometheus-kube-state-metrics.utils.svc.cluster.local. Port:8080 Priority:10 Weight:10 Text: Mail:false Ttl:30 TargetStrip:0 Group: Key:} \u001b(B\u001b[m\r\n"
+        ],
+        [
+            4.1e-05,
+            "\u001b[31m[kube-dns-2712020956-g0tj5 kubedns] I1003 22:22:57.311839       1 dns.go:264] New service: grafana-grafana \u001b(B\u001b[m\r\n"
+        ],
+        [
+            0.000117,
+            "\u001b[31m[kube-dns-2712020956-g0tj5 kubedns] I1003 22:22:57.311863       1 dns.go:462] Added SRV record &{Host:grafana-grafana.utils.svc.cluster.local. Port:80 Priority:10 Weight:10 Text: Mail:false Ttl:30 TargetStrip:0 Group: Key:} \u001b(B\u001b[m\r\n"
+        ],
+        [
+            5.7e-05,
+            "\u001b[31m[kube-dns-2712020956-g0tj5 kubedns] I1003 22:22:57.311886       1 dns.go:264] New service: docker-registry-docker-registry \u001b(B\u001b[m\r\n"
+        ],
+        [
+            0.000114,
+            "\u001b[31m[kube-dns-2712020956-g0tj5 kubedns] I1003 22:22:57.311907       1 dns.go:462] Added SRV record &{Host:docker-registry-docker-registry.utils.svc.cluster.local. Port:4000 Priority:10 Weight:10 Text: Mail:false Ttl:30 TargetStrip:0 Group: Key:} \u001b(B\u001b[m\r\n"
+        ],
+        [
+            4.3e-05,
+            "\u001b[31m[kube-dns-2712020956-g0tj5 kubedns] I1003 22:22:57.311927       1 dns.go:264] New service: chartmuseum-chartmuseum \u001b(B\u001b[m\r\n"
+        ],
+        [
+            0.00011,
+            "\u001b[31m[kube-dns-2712020956-g0tj5 kubedns] I1003 22:22:57.311947       1 dns.go:462] Added SRV record &{Host:chartmuseum-chartmuseum.utils.svc.cluster.local. Port:8080 Priority:10 Weight:10 Text: Mail:false Ttl:30 TargetStrip:0 Group: Key:} \u001b(B\u001b[m\r\n"
+        ],
+        [
+            6e-05,
+            "\u001b[31m[kube-dns-2712020956-g0tj5 kubedns] I1003 22:22:57.311971       1 dns.go:264] New service: ingress-nginx-ingress-controller \u001b(B\u001b[m\r\n"
+        ],
+        [
+            9.8e-05,
+            "\u001b[31m[kube-dns-2712020956-g0tj5 kubedns] I1003 22:22:57.311992       1 dns.go:462] Added SRV record &{Host:ingress-nginx-ingress-controller.utils.svc.cluster.local. Port:80 Priority:10 Weight:10 Text: Mail:false Ttl:30 TargetStrip:0 Group: Key:} \u001b(B\u001b[m\r\n"
+        ],
+        [
+            0.000108,
+            "\u001b[31m[kube-dns-2712020956-g0tj5 kubedns] I1003 22:22:57.312009       1 dns.go:462] Added SRV record &{Host:ingress-nginx-ingress-controller.utils.svc.cluster.local. Port:443 Priority:10 Weight:10 Text: Mail:false Ttl:30 TargetStrip:0 Group: Key:} \u001b(B\u001b[m\r\n"
+        ],
+        [
+            5.2e-05,
+            "\u001b[31m[kube-dns-2712020956-g0tj5 kubedns] I1003 22:22:57.312027       1 dns.go:264] New service: heapster \u001b(B\u001b[m\r\n"
+        ],
+        [
+            5.1e-05,
+            "\u001b[31m[kube-dns-2712020956-g0tj5 kubedns] I1003 22:22:57.312049       1 dns.go:264] New service: blogs-mariadb \u001b(B\u001b[m\r\n"
+        ],
+        [
+            9.8e-05,
+            "\u001b[31m[kube-dns-2712020956-g0tj5 kubedns] I1003 22:22:57.312068       1 dns.go:462] Added SRV record &{Host:blogs-mariadb.ghost.svc.cluster.local. Port:3306 Priority:10 Weight:10 Text: Mail:false Ttl:30 TargetStrip:0 Group: Key:} \u001b(B\u001b[m\r\n"
+        ],
+        [
+            0.00041,
+            "\u001b[31m[kube-dns-2712020956-g0tj5 kubedns] I1003 22:22:57.312092       1 dns.go:264] New service: ghost-k8s-meetup-ghost \u001b(B\u001b[m\r\n"
+        ],
+        [
+            0.000109,
+            "\u001b[31m[kube-dns-2712020956-g0tj5 kubedns] I1003 22:22:57.312112       1 dns.go:462] Added SRV record &{Host:ghost-k8s-meetup-ghost.ghost.svc.cluster.local. Port:80 Priority:10 Weight:10 Text: Mail:false Ttl:30 TargetStrip:0 Group: Key:} \u001b(B\u001b[m\r\n"
+        ],
+        [
+            6.3e-05,
+            "\u001b[31m[kube-dns-2712020956-g0tj5 kubedns] I1003 22:22:57.312131       1 dns.go:264] New service: artifactory \u001b(B\u001b[m\r\n"
+        ],
+        [
+            9e-05,
+            "\u001b[31m[kube-dns-2712020956-g0tj5 kubedns] I1003 22:22:57.312149       1 dns.go:462] Added SRV record &{Host:artifactory.utils.svc.cluster.local. Port:8081 Priority:10 Weight:10 Text: Mail:false Ttl:30 TargetStrip:0 Group: Key:} \u001b(B\u001b[m\r\n"
+        ],
+        [
+            4.4e-05,
+            "\u001b[31m[kube-dns-2712020956-g0tj5 kubedns] I1003 22:22:57.312169       1 dns.go:264] New service: jenkins-jenkins \u001b(B\u001b[m\r\n"
+        ],
+        [
+            0.000109,
+            "\u001b[31m[kube-dns-2712020956-g0tj5 kubedns] I1003 22:22:57.312188       1 dns.go:462] Added SRV record &{Host:jenkins-jenkins.utils.svc.cluster.local. Port:8080 Priority:10 Weight:10 Text: Mail:false Ttl:30 TargetStrip:0 Group: Key:} \u001b(B\u001b[m\r\n"
+        ],
+        [
+            0.031054,
+            "\u001b[31m[kube-dns-2712020956-g0tj5 kubedns] I1003 22:22:57.312210       1 dns.go:264] New service: nginx \u001b(B\u001b[m\r\n"
+        ],
+        [
+            0.000107,
+            "\u001b[31m[kube-dns-2712020956-g0tj5 kubedns] I1003 22:22:57.312232       1 dns.go:462] Added SRV record &{Host:nginx.utils.svc.cluster.local. Port:80 Priority:10 Weight:10 Text: Mail:false Ttl:30 TargetStrip:0 Group: Key:} \u001b(B\u001b[m\r\n"
+        ],
+        [
+            8.5e-05,
+            "\u001b[31m[kube-dns-2712020956-g0tj5 kubedns] I1003 22:22:57.312250       1 dns.go:462] Added SRV record &{Host:nginx.utils.svc.cluster.local. Port:443 Priority:10 Weight:10 Text: Mail:false Ttl:30 TargetStrip:0 Group: Key:} \u001b(B\u001b[m\r\n"
+        ],
+        [
+            4.7e-05,
+            "\u001b[31m[kube-dns-2712020956-g0tj5 kubedns] I1003 22:22:57.312274       1 dns.go:264] New service: ingress-nginx-ingress-default-backend \u001b(B\u001b[m\r\n"
+        ],
+        [
+            6.8e-05,
+            "\u001b[31m[kube-dns-2712020956-g0tj5 kubedns] I1003 22:22:57.312298       1 dns.go:264] New service: kube-lego-nginx \u001b(B\u001b[m\r\n"
+        ],
+        [
+            8.2e-05,
+            "\u001b[31m[kube-dns-2712020956-g0tj5 kubedns] I1003 22:22:57.312321       1 dns.go:264] New service: opendatacentre-blog-citopro-ghost \u001b(B\u001b[m\r\n"
+        ],
+        [
+            0.000145,
+            "\u001b[31m[kube-dns-2712020956-g0tj5 kubedns] I1003 22:22:57.312340       1 dns.go:462] Added SRV record &{Host:opendatacentre-blog-citopro-ghost.ghost.svc.cluster.local. Port:80 Priority:10 Weight:10 Text: Mail:false Ttl:30 TargetStrip:0 Group: Key:} \u001b(B\u001b[m\r\n"
+        ],
+        [
+            7e-05,
+            "\u001b[31m[kube-dns-2712020956-g0tj5 kubedns] I1003 22:22:57.312383       1 dns.go:264] New service: prometheus-prometheus-node-exporter \u001b(B\u001b[m\r\n"
+        ],
+        [
+            0.000115,
+            "\u001b[31m[kube-dns-2712020956-g0tj5 kubedns] I1003 22:22:57.312407       1 dns.go:494] Added SRV record &{Host:6532626438336539.prometheus-prometheus-node-exporter.utils.svc.cluster.local. Port:9100 Priority:10 Weight:10 Text: Mail:false Ttl:30 TargetStrip:0 Group: Key:} \u001b(B\u001b[m\r\n"
+        ],
+        [
+            0.000114,
+            "\u001b[31m[kube-dns-2712020956-g0tj5 kubedns] I1003 22:22:57.312439       1 dns.go:494] Added SRV record &{Host:3937333364383365.prometheus-prometheus-node-exporter.utils.svc.cluster.local. Port:9100 Priority:10 Weight:10 Text: Mail:false Ttl:30 TargetStrip:0 Group: Key:} \u001b(B\u001b[m\r\n"
+        ],
+        [
+            5.3e-05,
+            "\u001b[31m[kube-dns-2712020956-g0tj5 kubedns] I1003 22:22:57.312454       1 dns.go:264] New service: jenkins-jenkins-agent \u001b(B\u001b[m\r\n"
+        ],
+        [
+            9.2e-05,
+            "\u001b[31m[kube-dns-2712020956-g0tj5 kubedns] I1003 22:22:57.312474       1 dns.go:462] Added SRV record &{Host:jenkins-jenkins-agent.utils.svc.cluster.local. Port:50000 Priority:10 Weight:10 Text: Mail:false Ttl:30 TargetStrip:0 Group: Key:} \u001b(B\u001b[m\r\n"
+        ],
+        [
+            5.9e-05,
+            "\u001b[31m[kube-dns-2712020956-g0tj5 kubedns] I1003 22:22:57.312495       1 dns.go:264] New service: postgresql \u001b(B\u001b[m\r\n"
+        ],
+        [
+            0.000111,
+            "\u001b[31m[kube-dns-2712020956-g0tj5 kubedns] I1003 22:22:57.312515       1 dns.go:462] Added SRV record &{Host:postgresql.utils.svc.cluster.local. Port:5432 Priority:10 Weight:10 Text: Mail:false Ttl:30 TargetStrip:0 Group: Key:} \u001b(B\u001b[m\r\n"
+        ],
+        [
+            3.7e-05,
+            "\u001b[31m[kube-dns-2712020956-g0tj5 kubedns] I1003 22:22:57.312535       1 dns.go:264] New service: kube-dns \u001b(B\u001b[m\r\n"
+        ],
+        [
+            0.000105,
+            "\u001b[31m[kube-dns-2712020956-g0tj5 kubedns] I1003 22:22:57.312554       1 dns.go:462] Added SRV record &{Host:kube-dns.kube-system.svc.cluster.local. Port:53 Priority:10 Weight:10 Text: Mail:false Ttl:30 TargetStrip:0 Group: Key:} \u001b(B\u001b[m\r\n"
+        ],
+        [
+            9.5e-05,
+            "\u001b[31m[kube-dns-2712020956-g0tj5 kubedns] I1003 22:22:57.312571       1 dns.go:462] Added SRV record &{Host:kube-dns.kube-system.svc.cluster.local. Port:53 Priority:10 Weight:10 Text: Mail:false Ttl:30 TargetStrip:0 Group: Key:} \u001b(B\u001b[m\r\n"
+        ],
+        [
+            5.5e-05,
+            "\u001b[31m[kube-dns-2712020956-g0tj5 kubedns] I1003 22:22:57.312590       1 dns.go:264] New service: tiller-deploy \u001b(B\u001b[m\r\n"
+        ],
+        [
+            9.8e-05,
+            "\u001b[31m[kube-dns-2712020956-g0tj5 kubedns] I1003 22:22:57.312618       1 dns.go:462] Added SRV record &{Host:tiller-deploy.kube-system.svc.cluster.local. Port:44134 Priority:10 Weight:10 Text: Mail:false Ttl:30 TargetStrip:0 Group: Key:} \u001b(B\u001b[m\r\n"
+        ],
+        [
+            5.6e-05,
+            "\u001b[31m[kube-dns-2712020956-g0tj5 kubedns] I1003 22:22:57.312639       1 dns.go:264] New service: ghost-k8s-meetup-mariadb \u001b(B\u001b[m\r\n"
+        ],
+        [
+            0.000101,
+            "\u001b[31m[kube-dns-2712020956-g0tj5 kubedns] I1003 22:22:57.312659       1 dns.go:462] Added SRV record &{Host:ghost-k8s-meetup-mariadb.ghost.svc.cluster.local. Port:3306 Priority:10 Weight:10 Text: Mail:false Ttl:30 TargetStrip:0 Group: Key:} \u001b(B\u001b[m\r\n"
+        ],
+        [
+            6.8e-05,
+            "\u001b[31m[kube-dns-2712020956-g0tj5 kubedns] I1003 22:22:57.312683       1 dns.go:264] New service: citopro-blog-citopro-ghost \u001b(B\u001b[m\r\n"
+        ],
+        [
+            0.00011,
+            "\u001b[31m[kube-dns-2712020956-g0tj5 kubedns] I1003 22:22:57.312703       1 dns.go:462] Added SRV record &{Host:citopro-blog-citopro-ghost.ghost.svc.cluster.local. Port:80 Priority:10 Weight:10 Text: Mail:false Ttl:30 TargetStrip:0 Group: Key:} \u001b(B\u001b[m\r\n"
+        ],
+        [
+            6.2e-05,
+            "\u001b[31m[kube-dns-2712020956-g0tj5 kubedns] I1003 22:22:57.312721       1 dns.go:264] New service: prometheus-prometheus-server \u001b(B\u001b[m\r\n"
+        ],
+        [
+            0.000105,
+            "\u001b[31m[kube-dns-2712020956-g0tj5 kubedns] I1003 22:22:57.312738       1 dns.go:462] Added SRV record &{Host:prometheus-prometheus-server.utils.svc.cluster.local. Port:80 Priority:10 Weight:10 Text: Mail:false Ttl:30 TargetStrip:0 Group: Key:} \u001b(B\u001b[m\r\n"
+        ],
+        [
+            0.543569,
+            "\u001b[31m[kube-dns-2712020956-g0tj5 kubedns] I1003 22:22:57.891517       1 dns.go:494] Added SRV record &{Host:6532626438336539.prometheus-prometheus-node-exporter.utils.svc.cluster.local. Port:9100 Priority:10 Weight:10 Text: Mail:false Ttl:30 TargetStrip:0 Group: Key:} \u001b(B\u001b[m\r\n"
+        ],
+        [
+            6.3e-05,
+            "\u001b[31m[kube-dns-2712020956-g0tj5 kubedns] I1003 22:22:57.891568       1 dns.go:494] Added SRV record &{Host:3937333364383365.prometheus-prometheus-node-exporter.utils.svc.cluster.local. Port:9100 Priority:10 Weight:10 Text: Mail:false Ttl:30 TargetStrip:0 Group: Key:} \u001b(B\u001b[m\r\n"
+        ],
+        [
+            0.000134,
+            "\u001b[31m[kube-dns-2712020956-g0tj5 kubedns] I1003 22:22:57.891623       1 dns.go:494] Added SRV record &{Host:3335663562663330.prometheus-prometheus-kube-state-metrics.utils.svc.cluster.local. Port:8080 Priority:10 Weight:10 Text: Mail:false Ttl:30 TargetStrip:0 Group: Key:} \u001b(B\u001b[m\r\n"
+        ],
+        [
+            1.5,
+            "^C"
+        ],
+        [
+            0.000416,
+            "\r\n"
+        ],
+        [
+            0.000116,
+            "bash-3.2$ "
+        ]
     ]
-  ]
 }

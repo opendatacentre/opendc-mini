@@ -1,0 +1,206 @@
+{
+  "version": 1,
+  "width": 167,
+  "height": 49,
+  "duration": 17.510127,
+  "command": null,
+  "title": null,
+  "env": {
+    "TERM": "xterm-256color",
+    "SHELL": "/bin/bash"
+  },
+  "stdout": [
+    [
+      0.009533,
+      "\u001b[?1034hbash-3.2$ "
+    ],
+    [
+      1.31894,
+      "al"
+    ],
+    [
+      2.4e-05,
+      "ias k=`whic"
+    ],
+    [
+      2.7e-05,
+      "h ku"
+    ],
+    [
+      1.4e-05,
+      "bec"
+    ],
+    [
+      1.3e-05,
+      "tl"
+    ],
+    [
+      1.6e-05,
+      "`"
+    ],
+    [
+      0.853705,
+      "\r\n"
+    ],
+    [
+      0.002849,
+      "bash-3.2$ "
+    ],
+    [
+      1.245992,
+      "\r\n"
+    ],
+    [
+      7.6e-05,
+      "bash-3.2$ "
+    ],
+    [
+      1.068393,
+      "k"
+    ],
+    [
+      0.101467,
+      " "
+    ],
+    [
+      0.393519,
+      "g"
+    ],
+    [
+      0.124407,
+      "e"
+    ],
+    [
+      0.135349,
+      "t"
+    ],
+    [
+      0.089024,
+      " "
+    ],
+    [
+      0.743098,
+      "p"
+    ],
+    [
+      0.089463,
+      "o"
+    ],
+    [
+      0.584961,
+      "\r\n"
+    ],
+    [
+      0.166511,
+      "NAME                                                        READY     STATUS    RESTARTS   AGE\r\ngrafana-grafana-3194865201-867fq                            1/1       Running   0          3d\r\njenkins-jenkins-4184409832-9xm29                            1/1       Running   0          11d\r\nprometheus-prometheus-kube-state-metrics-2056401780-ftmqq   1/1       Running   0          10d\r\nprometheus-prometheus-node-exporter-54qhj                   1/1       Running   0          10d\r\nprometheus-prometheus-node-exporter-kzdhz                   1/1       Running   0        "
+    ],
+    [
+      6.4e-05,
+      "  10d\r\nprometheus-prometheus-node-exporter-tg4qp                   1/1       Running   0          10d\r\nprometheus-prometheus-node-exporter-vzvcz                   1/1       Running   1          10d\r\nprometheus-prometheus-server-3461535205-3qspt               2/2       Running   0          3d\r\n"
+    ],
+    [
+      0.002587,
+      "bash-3.2$ "
+    ],
+    [
+      1.360971,
+      "\r\n"
+    ],
+    [
+      5.4e-05,
+      "bash-3.2$ "
+    ],
+    [
+      1.5,
+      "al"
+    ],
+    [
+      4.8e-05,
+      "ias kt=`which k"
+    ],
+    [
+      1.8e-05,
+      "ubeta"
+    ],
+    [
+      1.7e-05,
+      "il`\r\n"
+    ],
+    [
+      0.0024,
+      "bash-3.2$ "
+    ],
+    [
+      1.492167,
+      "\r\n"
+    ],
+    [
+      7.4e-05,
+      "bash-3.2$ "
+    ],
+    [
+      1.40592,
+      "k"
+    ],
+    [
+      0.461095,
+      "t"
+    ],
+    [
+      0.090069,
+      " "
+    ],
+    [
+      1.080086,
+      "j"
+    ],
+    [
+      0.056091,
+      "e"
+    ],
+    [
+      0.101145,
+      "n"
+    ],
+    [
+      0.202582,
+      "k"
+    ],
+    [
+      0.157471,
+      "i"
+    ],
+    [
+      0.168793,
+      "n"
+    ],
+    [
+      0.045602,
+      "s"
+    ],
+    [
+      0.562256,
+      "\r\n"
+    ],
+    [
+      0.390861,
+      "Will tail 1 logs...\r\n"
+    ],
+    [
+      3e-05,
+      "\u001b(B\u001b[mjenkins-jenkins-4184409832-9xm29\u001b(B\u001b[m\r\n"
+    ],
+    [
+      1.5,
+      "^C"
+    ],
+    [
+      0.000427,
+      "\r\n"
+    ],
+    [
+      9.6e-05,
+      "bash-3.2$ "
+    ]
+  ]
+}

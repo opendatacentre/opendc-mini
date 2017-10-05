@@ -9,7 +9,11 @@
         "expandable-chapters",
         "page-toc",
         "back-to-top-button",
-        "scripts-styles"
+        "scripts-styles",
+        "videoclips",
+        "analytics",
+        "-highlight",
+        "sunlight-highlighter"
     ],
     "pluginsConfig": {
         "mermaid-gb3": {
@@ -26,6 +30,13 @@
             "css": [
                 "css/asciinema-player.css"
             ]
+        },
+        "analytics": {
+            "google": "UA-97410630-3"
+        },
+        "sunlight-highlighter": {
+            "theme": "dark",
+            "lineNumber": true
         }
     }
 }

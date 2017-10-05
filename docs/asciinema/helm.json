@@ -1,0 +1,314 @@
+{
+  "version": 1,
+  "width": 167,
+  "height": 49,
+  "duration": 17.580547,
+  "command": null,
+  "title": null,
+  "env": {
+    "TERM": "xterm-256color",
+    "SHELL": "/bin/bash"
+  },
+  "stdout": [
+    [
+      0.009617,
+      "\u001b[?1034hbash-3.2$ "
+    ],
+    [
+      0.844612,
+      "h"
+    ],
+    [
+      0.08996,
+      "e"
+    ],
+    [
+      0.168525,
+      "l"
+    ],
+    [
+      0.213826,
+      "m"
+    ],
+    [
+      0.078854,
+      " "
+    ],
+    [
+      0.157354,
+      "s"
+    ],
+    [
+      0.169167,
+      "e"
+    ],
+    [
+      0.056626,
+      "a"
+    ],
+    [
+      0.111778,
+      "r"
+    ],
+    [
+      0.089973,
+      "c"
+    ],
+    [
+      0.168621,
+      "h"
+    ],
+    [
+      0.090118,
+      " "
+    ],
+    [
+      0.247497,
+      "o"
+    ],
+    [
+      0.112404,
+      "p"
+    ],
+    [
+      0.090181,
+      "e"
+    ],
+    [
+      0.123564,
+      "n"
+    ],
+    [
+      0.337694,
+      "v"
+    ],
+    [
+      0.271569,
+      "p"
+    ],
+    [
+      0.234554,
+      "n"
+    ],
+    [
+      0.517494,
+      "\r\n"
+    ],
+    [
+      0.194082,
+      "NAME          \tVERSION\tDESCRIPTION                                       \r\nstable/openvpn\t1.1.2  \tA Helm chart to install an openvpn server insid...\r\n"
+    ],
+    [
+      0.00325,
+      "bash-3.2$ "
+    ],
+    [
+      1.332843,
+      "h"
+    ],
+    [
+      0.067108,
+      "e"
+    ],
+    [
+      0.303912,
+      "l"
+    ],
+    [
+      0.202377,
+      "m"
+    ],
+    [
+      0.067546,
+      " "
+    ],
+    [
+      0.236414,
+      "i"
+    ],
+    [
+      0.18057,
+      "n"
+    ],
+    [
+      0.100545,
+      "s"
+    ],
+    [
+      0.123777,
+      "t"
+    ],
+    [
+      0.112644,
+      "a"
+    ],
+    [
+      0.314866,
+      "l"
+    ],
+    [
+      0.101179,
+      "l"
+    ],
+    [
+      0.135156,
+      " "
+    ],
+    [
+      0.585222,
+      "-"
+    ],
+    [
+      0.101151,
+      "-"
+    ],
+    [
+      0.25857,
+      "n"
+    ],
+    [
+      0.045049,
+      "a"
+    ],
+    [
+      0.123612,
+      "m"
+    ],
+    [
+      0.09123,
+      "e"
+    ],
+    [
+      0.123358,
+      " "
+    ],
+    [
+      0.550673,
+      "o"
+    ],
+    [
+      0.1235,
+      "p"
+    ],
+    [
+      0.067808,
+      "e"
+    ],
+    [
+      0.247345,
+      "n"
+    ],
+    [
+      0.361213,
+      "v"
+    ],
+    [
+      0.25738,
+      "p"
+    ],
+    [
+      0.292637,
+      "n"
+    ],
+    [
+      0.382257,
+      " "
+    ],
+    [
+      0.698073,
+      "s"
+    ],
+    [
+      0.123481,
+      "t"
+    ],
+    [
+      0.046439,
+      "a"
+    ],
+    [
+      0.144695,
+      "b"
+    ],
+    [
+      0.326239,
+      "l"
+    ],
+    [
+      0.044921,
+      "e"
+    ],
+    [
+      0.776636,
+      "/"
+    ],
+    [
+      0.292398,
+      "o"
+    ],
+    [
+      0.114054,
+      "p"
+    ],
+    [
+      0.077028,
+      "e"
+    ],
+    [
+      0.348676,
+      "n"
+    ],
+    [
+      0.360236,
+      "v"
+    ],
+    [
+      0.461088,
+      "p"
+    ],
+    [
+      0.056286,
+      "n"
+    ],
+    [
+      0.630103,
+      "\r\n"
+    ],
+    [
+      1.5,
+      "NAME:   openvpn\r\n"
+    ],
+    [
+      0.303879,
+      "LAST DEPLOYED: Wed Oct  4 09:35:45 2017\r\nNAMESPACE: kube-system\r\nSTATUS: DEPLOYED\r\n\r\n"
+    ],
+    [
+      3.2e-05,
+      "RESOURCES:\r\n==> v1/ConfigMap\r\nNAME             DATA  AGE\r\nopenvpn-openvpn  4     1s\r\n\r\n==> v1/PersistentVolumeClaim\r\nNAME             STATUS   VOLUME  CAPACITY  ACCESSMODES  "
+    ],
+    [
+      2.1e-05,
+      "STORAGECLASS  AGE\r\nopenvpn-openvpn  Pending  gp2     1s\r\n\r\n==> v1/Service\r\nNAME             CLUSTER-IP      EXTERNAL-IP  PORT(S)"
+    ],
+    [
+      1.4e-05,
+      "        AGE\r\nopenvpn-openvpn  100.67.113.219  <pending>    443:32600/TCP  1s\r\n\r\n==> v1beta1/Deployment\r\n"
+    ],
+    [
+      4.8e-05,
+      "NAME             DESIRED  CURRENT  UP-TO-DATE  AVAILABLE  AGE\r\nopenvpn-openvpn  1        1        "
+    ],
+    [
+      2.9e-05,
+      "1           0          1s\r\n\r\n\r\nNOTES:\r\nOpenVPN is now starting.\r\n\r\nPlease be aware that certificate generation is variable and may take some time (minutes).\r\n\r\nCheck pod status with the command:\r\n\r\n  POD_NAME=$(kubectl get pods -l type=openvpn -o jsonpath='{ .items[0].metadata.name }') && kubectl log $POD_NAME --follow\r\n\r\nLoadBalancer ingress creation can take some time as well. Check service status with the command:\r\n\r\n  kubectl get svc\r\n\r\nOnce the external IP is available and all the server certificates are generated create client key .ovpn files by pasting the following into a shell:\r\n\r\n  POD_NAME=$(kubectl get pods --namespace kube-system -l type=openvpn -o jsonpath='{ .items[0].metadata.name }')\r\n  SERVICE_NAME=$(kubectl get svc --namespace kube-system -l type=openvpn  -o jsonpath='{ .items[0].metadata.name }')\r\n  SERVICE_IP=$(kubectl get svc --namespace kube-system $SERVICE_NAME -o go-template='{{ range $k, $v := (index .status.loadBalancer.ingress 0)}}{{ $v }}{{end}}')\r\n  KEY_NAME=kubeVPN\r\n  kubectl --"
+    ],
+    [
+      7.2e-05,
+      "namespace kube-system exec -it $POD_NAME /etc/openvpn/setup/newClientCert.sh $KEY_NAME $SERVICE_IP\r\n  kubectl --namespace kube-system exec -it $POD_NAME cat /etc/openvpn/certs/pki/$KEY_NAME.ovpn > $KEY_NAME.ovpn\r\n\r\nCopy the resulting $KEY_NAME.ovpn file to your open vpn client (ex: in tunnelblick, just double click on the file).  Do this for each user that needs to connect to the VPN.  Change KEY_NAME for each additional user.\r\n\r\n"
+    ],
+    [
+      0.003373,
+      "bash-3.2$ "
+    ]
+  ]
+}

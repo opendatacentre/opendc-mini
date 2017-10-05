@@ -15,7 +15,7 @@ The `kubectx` and `kubens` commands make it easy to switch between different con
 
 For example, the following `kubectx` commands display the available contexts and allow the easy selection of one.
 
-```
+```console
 $ kubectx
 minikube
 opendc.aws
@@ -28,7 +28,7 @@ Switched to context "opendc.local".
 
 The next example shows how to display the available Namespaces and then selecting one  to work with.
 
-```
+```console
 $ kubens
 default
 kube-public
@@ -58,7 +58,7 @@ If installing `kubectx` and `kubens` on macOS then make sure to use the `--with-
 
 For example, the following command tails the logs from each `kube-dns` Pod, with each Pod having three containers.
 
-```
+```console
 $ kubetail kube-dns -n kube-system
 Will tail 6 logs...
 kube-dns-2712020956-g0tj5 kubedns
@@ -73,43 +73,62 @@ kube-dns-2712020956-lzp4s sidecar
 
 ### Installing
 
-\<asciinema of installing\>
+The installation instructions can be found [here](https://github.com/johanhaleby/kubetail#installation).
 
-\<And YouTube video\>
 
 ## Helm
 
-[Web](https://helm.sh)
-[Repo](https://github.com/kubernetes/helm)
+*GitHub [Repo](https://github.com/kubernetes/helm)<br/>*
+*Official [Website](https://helm.sh)*
 
-`Helm` is the Kubernetes package manager.  It is a vital part of any Kubernetes setup and makes the installation / management of workloads both easy and fast.  This course makes extensive use of Helm.
+
+`Helm` is the Kubernetes package manager.  It is a vital part of any Kubernetes setup, making the installation and management of workloads both easy and fast.  This course makes extensive use of Helm.
 
 The following command shows an example of searching for, and then installing, an OpenVPN workload. 
 
-	$ helm search openvpn
-	NAME          	VERSION	DESCRIPTION
-	stable/openvpn	1.1.2  	A Helm chart to install an openvpn server insid...
-	
-	$ helm install --name openvpn stable/openvpn
-	NAME:   openvpn
-	LAST DEPLOYED: Mon Oct  2 11:10:16 2017
-	NAMESPACE: kube-system
-	STATUS: DEPLOYED
-	…
-	…
+```console
+$ helm search openvpn
+NAME          	VERSION	DESCRIPTION
+stable/openvpn	1.1.2  	A Helm chart to install an openvpn server insid...
+
+$ helm install --name openvpn stable/openvpn
+NAME:   openvpn
+LAST DEPLOYED: Mon Oct  2 11:10:16 2017
+NAMESPACE: kube-system
+STATUS: DEPLOYED
+…
+…
+```
+
+<asciinema-player src="../asciinema/helm.json" rows="20"></asciinema-player>
 
 ### Installing
 
-\<asciinema of installing\>
-`curl -O https://storage.googleapis.com/kubernetes-helm/helm-v2.6.1-darwin-amd64.tar.gz` 
+The installation instructions can be found [here](https://docs.helm.sh/using_helm/#quickstart).
 
-`helm init`
-
-\<And YouTube video\>
 
 ## Command Aliases
 
-\<uses a file in files/ of the opendc-mini repo\>
+When typing the same commands over and over it can become repetitive and also add up to a lot of time spent typing.  To hep with this it is possible to setup command aliases.  Two useful ones are show below.
+
+```console
+$ alias k=`which kubectl`
+$ alias kt=`which kubetail`
+```
+
+**Important**<br/>
+For the above command aliases to work, the commands must be found somewhere in the `PATH`.
+
+<asciinema-player src="../asciinema/command_aliases.json" rows="20"></asciinema-player>
+
+### Installing
+
+The aliases can be added to the shell configuration files so that they do not need to be manually run each time a new shell is started.  In `bash` you could add the aliases to the end of  `~./.bash_profile`.  
+
+```console+lineNumbers:true+lineNumberStart:100
+alias k=`which kubectl`
+alias kt=`which kubetail`
+```
 
 
 ## Example
@@ -123,4 +142,10 @@ example (using asciinema, which will show the colours) of:
 * k to get Pods
 * kt to tail  ???
 
-\<And YouTube video\>
+This is an example video of using the aformentioned capabilties.
+
+Video talk:
+	Goto the web in the description to learn how to install the tools.
+
+{% youtube %}dxP4QEA7EVU{% endyoutube %}
+
