@@ -42,3 +42,15 @@ asciinema play ~/Sites/OpenDatacentre/opendc-mini/docs/asciinema/kubectx_kubens.
 
 ## YouTube
 
+
+
+## Serving Content for Testing
+
+To serve the Gitbook site for testing on the local network, as opposed to the localhost which is used by `gitbook serve`, use the built-in Python HTTP server.
+
+```console
+$ cd opendc-mini
+$ python -mSimpleHTTPServer
+```
+
+[Site](http://192.168.1.10:8000/_book/)

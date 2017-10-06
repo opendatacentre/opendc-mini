@@ -2,7 +2,7 @@
 
 ---
 
-Open Datacentre Mini, aka **opendc-mini**, teaches how to build the components of a CI/CD pipeline using [Kubernetes](https://kubernetes.io) and [Helm](https://helm.sh).
+Open Datacentre Mini, aka **opendc-mini**, teaches how to build the components of a CI/CD platform using [Kubernetes](https://kubernetes.io) and [Helm](https://helm.sh).
 
 ---
 
@@ -20,11 +20,11 @@ It is expected that you have:
 
 The following diagram shows the overall solution architecture that will be built through the labs of this course.
 
-<diagram>
+<img src="images/content_placeholder.png" alt="placeholder" width="765"/>
 
 The following diagram shows the web entry points that are provided to the components of the solution.
 
-<diagram>
+<img src="images/content_placeholder.png" alt="placeholder" width="765"/>
 
 
 
