@@ -13,6 +13,7 @@ It is expected that you have:
 * Administrative access to a Kubernetes 1.7.x cluster.
 * RBAC disabled (although a later version of **opendc-mini** may incorporate RBAC).
 * A local installation of `kubectl` that is configured to access the Kubernetes cluster.
+* Control of DNS zone records if using `Kube Lego`.
 
 
 ## Architecture
