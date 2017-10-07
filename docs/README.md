@@ -18,14 +18,9 @@ It is expected that you have:
 
 ## Architecture
 
-The following diagram shows the overall solution architecture that will be built through the labs of this course.
+The following diagram shows a simplified view of the overall solution architecture that will be built through the labs of this course.
 
-<img src="images/content_placeholder.png" alt="placeholder" width="765"/>
-
-The following diagram shows the web entry points that are provided to the components of the solution.
-
-<img src="images/content_placeholder.png" alt="placeholder" width="765"/>
-
+<img src="images/architecture.png" alt="placeholder" width="765"/>
 
 
 
