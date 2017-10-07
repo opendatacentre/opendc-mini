@@ -135,5 +135,5 @@ alias kt=`which kubetail`
 
 The following video demonstrates the use of the installed commands.
 
-{% youtube %}xuGRzI6kXfw{% endyoutube %}
+{% youtube %}fcZMyuDlyPU{% endyoutube %}
 
