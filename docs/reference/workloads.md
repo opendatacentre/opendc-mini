@@ -16,13 +16,16 @@ Helm chart can be found *[here](https://github.com/kubernetes/charts/tree/master
 **Install**
 
 ```console
-$ helm install --name ingress --namespace utils -f charts-values/nginx-ingress/values.yaml stable/nginx-ingress --version 0.8.8
+$ helm install --name ingress --namespace utils \
+  -f charts-values/nginx-ingress/values.yaml \
+  stable/nginx-ingress --version 0.8.8
 ```
 
 **Upgrade**
 
 ```console
-$ helm upgrade ingress -f charts-values/nginx-ingress/values.yaml stable/nginx-ingress
+$ helm upgrade ingress -f charts-values/nginx-ingress/values.yaml \
+  stable/nginx-ingress
 ```
 
 
@@ -35,11 +38,15 @@ Helm chart can be found *[here](https://github.com/kubernetes/charts/tree/master
 **Install**
 
 ```console
-$ helm install --name lego --namespace utils --set config.LEGO_URL=https://acme-v01.api.letsencrypt.org/directory --set config.LEGO_EMAIL=please_use_your_email@email.com stable/kube-lego --version 0.1.12
+$ helm install --name lego --namespace utils \
+  --set config.LEGO_URL=https://acme-v01.api.letsencrypt.org/directory \
+  --set config.LEGO_EMAIL=please_use_your_email@email.com \
+  stable/kube-lego --version 0.1.12
 ```
 
-**Note**<br/>
-Please fill in your email address before executing above command.
+**Notes**<br/>
+* Please fill in your email address before executing above command.
+* The `LEGO_URL` used is for the production Lets Encrypt environment.  This means that the certificates will be trusted by yor web browser.
 
 
 **Upgrade**
@@ -77,13 +84,16 @@ Helm chart can be found *[here](https://github.com/kubernetes/charts/tree/master
 **Install**
 
 ```console
-$ helm install --name dashboard --namespace kube-system -f charts-values/dashboard/values.yaml stable/kubernetes-dashboard --version 0.4.0
+$ helm install --name dashboard --namespace kube-system \
+  -f charts-values/dashboard/values.yaml 
+  stable/kubernetes-dashboard --version 0.4.0
 ```
 
 **Upgrade**
 
 ```console
-$ helm upgrade dashboard -f charts-values/dashboard/values.yaml stable/kubernetes-dashboard
+$ helm upgrade dashboard -f charts-values/dashboard/values.yaml \
+  stable/kubernetes-dashboard
 ```
 
 
@@ -96,13 +106,16 @@ Helm chart can be found *[here](https://github.com/kubernetes/charts/tree/master
 **Install**
 
 ```console
-$ helm install --name prometheus --namespace utils -f charts-values/prometheus/values.yaml stable/prometheus --version 4.5.0
+$ helm install --name prometheus --namespace utils \
+  -f charts-values/prometheus/values.yaml \
+  stable/prometheus --version 4.5.0
 ```
 
 **Upgrade**
 
 ```console
-$ helm upgrade prometheus -f charts-values/prometheus/values.yaml stable/prometheus --version 4.5.0
+$ helm upgrade prometheus -f charts-values/prometheus/values.yaml \
+  stable/prometheus --version 4.5.0
 ```
 
 
@@ -115,13 +128,16 @@ Helm chart can be found *[here](https://github.com/kubernetes/charts/tree/master
 **Install**
 
 ```console
-$ helm install --name grafana --namespace utils -f charts-values/grafana/values.yaml stable/grafana --version 0.4.2
+$ helm install --name grafana --namespace utils \
+  -f charts-values/grafana/values.yaml \
+  stable/grafana --version 0.4.2
 ```
 
 **Upgrade**
 
 ```console
-$ helm upgrade grafana -f charts-values/grafana/values.yaml stable/grafana
+$ helm upgrade grafana -f charts-values/grafana/values.yaml \
+  stable/grafana
 ```
 
 
@@ -134,13 +150,16 @@ Helm chart can be found *[here](https://github.com/kubernetes/charts/tree/master
 **Install**
 
 ```console
-$ helm install --name jenkins --namespace utils -f charts-values/jenkins/values.yaml stable/jenkins --version 0.8.9
+$ helm install --name jenkins --namespace utils \
+  -f charts-values/jenkins/values.yaml \
+  stable/jenkins --version 0.8.9
 ```
 
 **Upgrade**
 
 ```console
-$ helm upgrade jenkins -f charts-values/jenkins/values.yaml stable/jenkins --version 0.8.9
+$ helm upgrade jenkins -f charts-values/jenkins/values.yaml \
+  stable/jenkins --version 0.8.9
 ```
 
 
@@ -154,16 +173,19 @@ Helm chart can be found *[here](https://github.com/kubernetes/charts/tree/master
 
 ```console
 $ helm repo add incubator http://storage.googleapis.com/kubernetes-charts-incubator
-$ helm install --name docker-registry --namespace utils --set persistentVolume.enabled=true,persistentVolume.size=8Gi,persistentVolume.storageClass=rook-block incubator/docker-registry
+$ helm install --name docker-registry --namespace utils \
+  --set persistentVolume.enabled=true,persistentVolume.size=8Gi,persistentVolume.storageClass=default \
+  incubator/docker-registry
 ```
 
 **Note**<br/>
-The above command uses Rook for the persistent storage class.  You will need to replace with the relevant storage class for your Kubernetes distribution.
+The above command uses `default` for the persistent storage class value.  If You want to use a different storage class you will need to replace the value.
 
 **Upgrade**
 
 ```console
-$ helm upgrade docker-registry --reuse-values incubator/docker-registry
+$ helm upgrade docker-registry --reuse-values \
+  incubator/docker-registry
 ```
 
 
@@ -202,11 +224,14 @@ Helm chart can be found *[here](https://github.com/kubernetes/charts/tree/master
 **Install**
 
 ```console
-$ helm install --name artifactory --namespace utils -f charts-values/artifactory/values.yaml stable/artifactory --version 6.0.0
+$ helm install --name artifactory --namespace utils \
+  -f charts-values/artifactory/values.yaml \
+  stable/artifactory --version 6.0.0
 ```
 
 **Upgrade**
 
 ```console
-$ helm upgrade artifactory -f charts-values/artifactory/values.yaml stable/artifactory --version 6.0.0
+$ helm upgrade artifactory -f charts-values/artifactory/values.yaml \
+  stable/artifactory --version 6.0.0
 ```

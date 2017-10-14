@@ -13,7 +13,8 @@ It is expected that you have:
 * Administrative access to a Kubernetes 1.7.x cluster.
 * RBAC disabled (although a later version of **opendc-mini** may incorporate RBAC).
 * A local installation of `kubectl` that is configured to access the Kubernetes cluster.
-* Control of DNS zone records if using `Kube Lego`.
+* Control of DNS zone records to be able to use `Kube Lego`.
+* A local clone of the [`opendc-mini`](https://github.com/opendatacentre/opendc-mini) GitHub repository.
 
 
 ## Architecture
@@ -21,9 +22,3 @@ It is expected that you have:
 The following diagram shows a simplified view of the overall solution architecture that will be built through the labs of this course.
 
 <img src="images/architecture.png" alt="placeholder" width="765"/>
-
-
-
-## opendc-mini GitHub Repo
-
-To be able to complete the labs of this course you will need to clone the [`opendc-mini`](https://github.com/opendatacentre/opendc-mini) GitHub repository.

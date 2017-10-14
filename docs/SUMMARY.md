@@ -7,9 +7,10 @@
 ### Labs
 
 * [Local Setup](labs/local_setup.md)
-* [Ingress Controller](labs/ingress_controller.md)
-* [Cluster Services](labs/cluster_services.md)
-* [CI/CD](labs/ci_cd.md)
+* [Ingress](labs/ingress.md)
+* [Cluster](labs/cluster.md)
+* [Jobs](labs/jobs.md)
+* [Artifacts](labs/artifacts.md)
 * [Monitoring](labs/monitoring.md)
 * [Wrap Up](labs/wrap_up.md)
 
