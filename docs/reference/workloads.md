@@ -9,9 +9,15 @@ This page describes how to install the workloads used by **opendc-mini**. All th
 
 ## [Nginx Ingress Controller](https://github.com/kubernetes/ingress-nginx)
 
+<<<<<<< HEAD
 An Ingress Controller is a daemon, deployed as a Kubernetes Pod, that watches the apiserver's /ingresses endpoint for updates to the Ingress resource. Its job is to satisfy requests for Ingresses. This is a NGINX controller built around the Kubernetes Ingress resource that uses ConfigMap to store the NGINX configuration.
 
 Helm chart can be found *[here](https://github.com/kubernetes/charts/tree/master/stable/nginx-ingress)*
+=======
+Heapster enables Container Cluster Monitoring and Performance Analysis. Heapster collects and interprets various signals like compute resource usage, lifecycle events, etc, and exports cluster metrics via REST endpoints. Heapster is required by the Kubernetes Dashboard to collect metrics for display.
+
+Helm chart can be found *[here](https://github.com/kubernetes/charts/tree/master/stable/heapster)*
+>>>>>>> master
 
 **Install**
 
@@ -26,11 +32,19 @@ $ helm upgrade ingress -f charts-values/nginx-ingress/values.yaml stable/nginx-i
 ```
 
 
+<<<<<<< HEAD
 ## [Kube Lego](https://github.com/jetstack/kube-lego)
 
 Automated creation and distribution of [Lets Encrypt](https://letsencrypt.org) TLS certificates for the Nginx Ingress Controller.
 
 Helm chart can be found *[here](https://github.com/kubernetes/charts/tree/master/stable/kube-lego)*
+=======
+## [Kubernetes Dashboard](https://github.com/kubernetes/dashboard)
+
+Kubernetes Dashboard is a general purpose, web-based UI for Kubernetes clusters. It allows users to manage applications running in the cluster and troubleshoot them, as well as manage the cluster itself.
+
+Helm chart can be found *[here](https://github.com/kubernetes/charts/tree/master/stable/kubernetes-dashboard)* 
+>>>>>>> master
 
 **Install**
 
@@ -49,11 +63,19 @@ $ helm upgrade lego --reuse-values stable/kube-lego
 ```
 
 
+<<<<<<< HEAD
 ## [Heapster](https://github.com/kubernetes/heapster)
 
 Heapster enables Container Cluster Monitoring and Performance Analysis. Heapster collects and interprets various signals like compute resource usage, lifecycle events, etc, and exports cluster metrics via REST endpoints. Heapster is required by the Kubernetes Dashboard to collect metrics for display.
 
 Helm chart can be found *[here](https://github.com/kubernetes/charts/tree/master/stable/heapster)*
+=======
+## [Nginx Ingress Controller](https://github.com/kubernetes/ingress-nginx)
+
+An Ingress Controller is a daemon, deployed as a Kubernetes Pod, that watches the apiserver's /ingresses endpoint for updates to the Ingress resource. Its job is to satisfy requests for Ingresses. This is a NGINX controller built around the Kubernetes Ingress resource that uses ConfigMap to store the NGINX configuration.
+
+Helm chart can be found *[here](https://github.com/kubernetes/charts/tree/master/stable/nginx-ingress)*
+>>>>>>> master
 
 **Install**
 
@@ -68,18 +90,34 @@ $ helm upgrade heapster stable/heapster
 ```
 
 
+<<<<<<< HEAD
 ## [Kubernetes Dashboard](https://github.com/kubernetes/dashboard)
 
 Kubernetes Dashboard is a general purpose, web-based UI for Kubernetes clusters. It allows users to manage applications running in the cluster and troubleshoot them, as well as manage the cluster itself.
+=======
+## [Kube Lego](https://github.com/jetstack/kube-lego)
+>>>>>>> master
 
 Helm chart can be found *[here](https://github.com/kubernetes/charts/tree/master/stable/kubernetes-dashboard)* 
+
+Helm chart can be found *[here](https://github.com/kubernetes/charts/tree/master/stable/kube-lego)*
 
 **Install**
 
 ```console
+<<<<<<< HEAD
 $ helm install --name dashboard --namespace kube-system -f charts-values/dashboard/values.yaml stable/kubernetes-dashboard --version 0.4.0
 ```
 
+=======
+$ helm install --name lego --namespace utils --set config.LEGO_URL=https://acme-v01.api.letsencrypt.org/directory --set config.LEGO_EMAIL=please_use_your_email@email.com stable/kube-lego --version 0.1.10
+```
+
+**Note**<br/>
+Please fill in your email address before executing above command.
+
+
+>>>>>>> master
 **Upgrade**
 
 ```console
@@ -158,7 +196,7 @@ $ helm install --name docker-registry --namespace utils --set persistentVolume.e
 ```
 
 **Note**<br/>
-The above command uses Rook for the persistent storage class.  You will need to replace with the relevant storage class for your Kubernetes distribution.
+The above command uses Rook for the persistent storage class. You will need to replace with the relevant storage class for your Kubernetes distribution.
 
 **Upgrade**
 
