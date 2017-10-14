@@ -2,7 +2,7 @@
 
 ---
 
-This page describes how to install the workloads used by **opendc-mini**. All the workloads are installed using `helm` and if you are not familiar with helm please visit our [local setup section](https://open-datacentre.gitbooks.io/open-datacentre-mini/content/labs/local_setup.html) to get up and running with helm.
+This page describes how to install the workloads used by **opendc-mini**. All the workloads are installed using `helm` and if you are not familiar with helm please visit our [local setup section](../labs/local_setup.md) to get up and running with helm.
 
 ---
 
