@@ -24,3 +24,6 @@ The following diagram shows a simplified view of the overall solution architectu
 
 
 
+## opendc-mini GitHub Repo
+
+To be able to complete the labs of this course you will need to clone the [`opendc-mini`](https://github.com/opendatacentre/opendc-mini) GitHub repository.

@@ -1,4 +1,0 @@
-artifactory:
-  image:
-    repository: "docker.bintray.io/jfrog/artifactory-oss"
-    version: 5.5.0

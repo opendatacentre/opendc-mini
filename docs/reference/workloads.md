@@ -2,16 +2,58 @@
 
 ---
 
-This page describes how to install the workloads used by **opendc-mini**.
+This page describes how to install the workloads used by **opendc-mini**. All the workloads are installed using `helm` and if you are not familiar with helm please visit our [local setup section](https://open-datacentre.gitbooks.io/open-datacentre-mini/content/labs/local_setup.html) to get up and running with helm.
 
 ---
 
 
-## Heapster
+## [Nginx Ingress Controller](https://github.com/kubernetes/ingress-nginx)
 
-*Helm [Chart](https://github.com/kubernetes/charts/tree/master/stable/heapster)*
+An Ingress Controller is a daemon, deployed as a Kubernetes Pod, that watches the apiserver's /ingresses endpoint for updates to the Ingress resource. Its job is to satisfy requests for Ingresses. This is a NGINX controller built around the Kubernetes Ingress resource that uses ConfigMap to store the NGINX configuration.
 
-Needed by the Kubernetes Dashboard to collect metrics for display.
+Helm chart can be found *[here](https://github.com/kubernetes/charts/tree/master/stable/nginx-ingress)*
+
+**Install**
+
+```console
+$ helm install --name ingress --namespace utils -f charts-values/nginx-ingress/values.yaml stable/nginx-ingress --version 0.8.8
+```
+
+**Upgrade**
+
+```console
+$ helm upgrade ingress -f charts-values/nginx-ingress/values.yaml stable/nginx-ingress
+```
+
+
+## [Kube Lego](https://github.com/jetstack/kube-lego)
+
+Automated creation and distribution of [Lets Encrypt](https://letsencrypt.org) TLS certificates for the Nginx Ingress Controller.
+
+Helm chart can be found *[here](https://github.com/kubernetes/charts/tree/master/stable/kube-lego)*
+
+**Install**
+
+```console
+$ helm install --name lego --namespace utils --set config.LEGO_URL=https://acme-v01.api.letsencrypt.org/directory --set config.LEGO_EMAIL=please_use_your_email@email.com stable/kube-lego --version 0.1.12
+```
+
+**Note**<br/>
+Please fill in your email address before executing above command.
+
+
+**Upgrade**
+
+```console
+$ helm upgrade lego --reuse-values stable/kube-lego
+```
+
+
+## [Heapster](https://github.com/kubernetes/heapster)
+
+Heapster enables Container Cluster Monitoring and Performance Analysis. Heapster collects and interprets various signals like compute resource usage, lifecycle events, etc, and exports cluster metrics via REST endpoints. Heapster is required by the Kubernetes Dashboard to collect metrics for display.
+
+Helm chart can be found *[here](https://github.com/kubernetes/charts/tree/master/stable/heapster)*
 
 **Install**
 
@@ -26,72 +68,30 @@ $ helm upgrade heapster stable/heapster
 ```
 
 
-## Kubernetes Dashboard
+## [Kubernetes Dashboard](https://github.com/kubernetes/dashboard)
 
-*Helm [Chart](https://github.com/kubernetes/charts/tree/master/stable/kubernetes-dashboard)*
+Kubernetes Dashboard is a general purpose, web-based UI for Kubernetes clusters. It allows users to manage applications running in the cluster and troubleshoot them, as well as manage the cluster itself.
 
-Web based administrative UI for the Kubernetes cluster.
+Helm chart can be found *[here](https://github.com/kubernetes/charts/tree/master/stable/kubernetes-dashboard)* 
 
 **Install**
 
 ```console
-$ helm install --name dashboard stable/kubernetes-dashboard
+$ helm install --name dashboard --namespace kube-system -f charts-values/dashboard/values.yaml stable/kubernetes-dashboard --version 0.4.0
 ```
 
 **Upgrade**
 
 ```console
-$ helm upgrade dashboard stable/kubernetes-dashboard
+$ helm upgrade dashboard -f charts-values/dashboard/values.yaml stable/kubernetes-dashboard
 ```
 
 
-## Nginx Ingress Controller
+## [Prometheus](https://prometheus.io/)
 
-*Helm [Chart](https://github.com/kubernetes/charts/tree/master/stable/nginx-ingress)*
+Prometheus is an open-source monitoring solution which provides powerful queries on dimensional data across the systems being monitored. 
 
-Kubernetes Ingress Controller based on Nginx.
-
-**Install**
-
-```console
-$ helm install --name ingress --namespace utils stable/nginx-ingress --version 0.7.2
-```
-
-**Upgrade**
-
-```console
-$ helm upgrade ingress stable/nginx-ingress
-```
-
-
-## Kube Lego
-
-*Helm [Chart](https://github.com/kubernetes/charts/tree/master/stable/kube-lego)*
-
-Automated creation and distribution of [Lets Encrypt](https://letsencrypt.org) TLS certificates for the Nginx Ingress Controller.
-
-**Install**
-
-```console
-$ helm install --name lego --namespace utils --set config.LEGO_URL=https://acme-v01.api.letsencrypt.org/directory --set config.LEGO_EMAIL=noreply@opendatacentre.io stable/kube-lego --version 0.1.10
-```
-
-**Note**<br/>
-The above command uses an **Open Datacentre** email.  You will need to replace with your own.
-
-
-**Upgrade**
-
-```console
-$ helm upgrade lego --reuse-values stable/kube-lego
-```
-
-
-## Prometheus
-
-*Helm [Chart](https://github.com/kubernetes/charts/tree/master/stable/prometheus)*
-
-Dynamic metric collection from metric exporters.
+Helm chart can be found *[here](https://github.com/kubernetes/charts/tree/master/stable/prometheus)*
 
 **Install**
 
@@ -106,11 +106,11 @@ $ helm upgrade prometheus -f charts-values/prometheus/values.yaml stable/prometh
 ```
 
 
-## Grafana
+## [Grafana](https://grafana.com/)
 
-*Helm [Chart](https://github.com/kubernetes/charts/tree/master/stable/grafana)*
+Grafana is an open-source analytics platform for all your metrics. Grafana allows you to query, visualize, alert on and understand your metrics no matter where they are stored. Create, explore, and share dashboards with your team and foster a data driven culture.
 
-Dashboarding and alerting.
+Helm chart can be found *[here](https://github.com/kubernetes/charts/tree/master/stable/grafana)*
 
 **Install**
 
@@ -125,11 +125,11 @@ $ helm upgrade grafana -f charts-values/grafana/values.yaml stable/grafana
 ```
 
 
-## Jenkins
+## [Jenkins](https://jenkins.io/)
 
-*Helm [Chart](https://github.com/kubernetes/charts/tree/master/stable/jenkins)*
+Jenkins is a leading open source automation server, which provides hundreds of plugins to support building, deploying and automating any project. With versions `>2.0.0`, Jenkins supports pipeline as code. Jenkins' pipelines can be configured by writing simple `groovy` scripts in a `Jenkinsfile` checked-in with source code of any project. More details about pipelines could be found [here](https://jenkins.io/doc/book/pipeline/).
 
-Job management for CI/CD.
+Helm chart can be found *[here](https://github.com/kubernetes/charts/tree/master/stable/jenkins)*
 
 **Install**
 
@@ -144,11 +144,11 @@ $ helm upgrade jenkins -f charts-values/jenkins/values.yaml stable/jenkins --ver
 ```
 
 
-## Docker Registry
+## [Docker Registry](https://github.com/kubernetes/kubernetes/tree/master/cluster/addons/registry)
 
-*Helm [Chart](https://github.com/kubernetes/charts/tree/master/incubator/docker-registry)*
+This helm chart installs the docker-registry `kubernetes` addon on the cluster. It provides a good place to store private `docker images` which could be used on the cluster.
 
-Registry for Docker images.
+Helm chart can be found *[here](https://github.com/kubernetes/charts/tree/master/incubator/docker-registry)*
 
 **Install**
 
@@ -167,11 +167,11 @@ $ helm upgrade docker-registry --reuse-values incubator/docker-registry
 ```
 
 
-## Chart Museum
+## [Chart Museum](https://github.com/chartmuseum/chartmuseum)
 
-*Helm [Chart](https://github.com/kubernetes/charts/tree/master/incubator/chartmuseum)*
+ChartMuseum is an open-source Helm Chart Repository written in Go, with support for cloud storage backends, including Google Cloud Storage and Amazon S3. It can be added as a repository to `helm`  and the api can be used to upload / retrieve charts.
 
-Repository for Helm Charts.
+Helm chart can be found *[here](https://github.com/kubernetes/charts/tree/master/incubator/chartmuseum)*
 
 **Install**
 
@@ -186,12 +186,18 @@ $ helm install --name chartmuseum --namespace utils incubator/chartmuseum
 $ helm upgrade chartmuseum incubator/chartmuseum
 ```
 
+## [Artifactory](https://www.jfrog.com/artifactory/)
 
-## Artifactory
+Artifactory is universal Artefact Repository Manager built by Jfrog. It fully supports software packages created by any language or technology. For instance Artifactory can be used to create:
 
-*Helm [Chart](https://github.com/kubernetes/charts/tree/master/stable/artifactory)*
+1. highly available private `docker registries`
+1. `npm repositories` with upstream mirrors like `npm`.
+1. `maven repositories` with upstream mirrors like `maven central`, `jcenter` etc.
+1. `composer` repository to host private packages.
 
-Repository for binary artifacts.
+And many more, a list of which could be found [here](https://www.jfrog.com/artifactory/features/).
+
+Helm chart can be found *[here](https://github.com/kubernetes/charts/tree/master/stable/artifactory)*
 
 **Install**
 

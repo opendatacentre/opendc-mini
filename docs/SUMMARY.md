@@ -7,10 +7,10 @@
 ### Labs
 
 * [Local Setup](labs/local_setup.md)
-* [Cluster Services](labs/cluster_services.md)
 * [Ingress Controller](labs/ingress_controller.md)
-* [Monitoring](labs/monitoring.md)
+* [Cluster Services](labs/cluster_services.md)
 * [CI/CD](labs/ci_cd.md)
+* [Monitoring](labs/monitoring.md)
 * [Wrap Up](labs/wrap_up.md)
 
 ### Reference
