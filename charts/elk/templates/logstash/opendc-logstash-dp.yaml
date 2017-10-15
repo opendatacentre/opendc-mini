@@ -1,0 +1,51 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: opendc-logstash
+  namespace: {{ .Values.namespace }}
+  labels:
+    solution: l1_logging
+    product:  logstash
+    heritage: {{ .Release.Service | quote }}
+    release:  {{ .Release.Name | quote }}
+    chart:    "{{ .Chart.Name }}-{{ .Chart.Version }}"
+spec:
+  replicas: {{ .Values.logstash_replicas }}
+  revisionHistoryLimit: 3
+  strategy: {'type': 'Recreate'}
+  template:
+    metadata:
+      labels:
+        solution: l1_logging
+        product:  logstash
+        heritage: {{ .Release.Service | quote }}
+        release:  {{ .Release.Name | quote }}
+        chart:    "{{ .Chart.Name }}-{{ .Chart.Version }}"
+    spec:
+      containers:
+        - name:  opendc-logstash
+          image: {{ .Values.logstash_image }}:{{ .Values.logstash_tag }}
+          imagePullPolicy: {{ default "IfNotPresent" .Values.pullPolicy }}
+          ports:
+            - name:          beats
+              containerPort: 5044
+              protocol:      TCP
+          args:
+            - -f
+            - /config-dir/opendc.conf
+          resources:
+            limits:
+              cpu:    1000m
+              memory: 1200Mi
+            requests:
+              cpu:    1000m
+              memory: 1200Mi
+          volumeMounts:
+            - name:      opendc-logstash
+              mountPath: /config-dir/
+      volumes:
+        - name: opendc-logstash
+          configMap:
+            name: opendc-logstash
+
+

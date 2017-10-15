@@ -1,0 +1,19 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: opendc-kibana
+  namespace: {{ .Values.namespace }}
+  labels:
+    solution: l1_logging
+    product:  kibana
+    heritage: {{ .Release.Service | quote }}
+    release:  {{ .Release.Name | quote }}
+    chart:    "{{ .Chart.Name }}-{{ .Chart.Version }}"
+spec:
+  rules:
+    - host: {{ .Values.kibana_fqdn }}
+      http:
+        paths:
+          - backend:
+              serviceName: opendc-kibana
+              servicePort: 80

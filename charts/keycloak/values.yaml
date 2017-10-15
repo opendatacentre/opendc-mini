@@ -1,0 +1,11 @@
+# Default values for im1_identity_management.
+namespace: opendc-infra
+
+opendj_image:     opendatacentre/opendj
+opendj_tag:       latest
+
+keycloak_image: jboss/keycloak
+keycloak_tag:   3.0.0.Final
+keycloak_fqdn:  keycloak.opendc.io
+
+replicaCount: 1

@@ -1,0 +1,15 @@
+name: Keycloak
+description: Keycloak identity and access management
+version: 0.0.1
+keywords:
+  - opendc
+  - identity
+  - management
+  - keycloak
+home: http://opendatacentre.io/
+sources:
+  - https://github.com/opendatacentre/opendc-mini
+maintainers:
+  - name:  Cito Pro
+    email: hello@citopro.com
+#icon: 

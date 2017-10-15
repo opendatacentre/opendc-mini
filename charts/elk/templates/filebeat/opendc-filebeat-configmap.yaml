@@ -1,0 +1,36 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: opendc-filebeat
+  namespace: {{ .Values.namespace }}
+  labels:
+    solution: l1_logging
+    product:  filebeat
+    heritage: {{ .Release.Service | quote }}
+    release:  {{ .Release.Name | quote }}
+    chart:    "{{ .Chart.Name }}-{{ .Chart.Version }}"
+data:
+  filebeat.yml: |
+    filebeat.prospectors:
+
+    - input_type: log
+      
+      paths:
+        - /var/log/containers/*.log
+      
+      symlinks:         true
+      
+      tags:
+        - pod
+      
+      json.keys_under_root: true      
+      json.add_error_key:   true
+      json.message_key:     log
+
+      document_type: kube-pods
+
+    output.logstash:
+      hosts: ["opendc-logstash:5044"]
+      index: filebeat
+
+    logging.level: info

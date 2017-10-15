@@ -1,0 +1,52 @@
+apiVersion: extensions/v1beta1
+kind: DaemonSet
+metadata:
+  name: opendc-filebeat
+  namespace: {{ .Values.namespace }}
+  labels:
+    solution: l1_logging
+    product:  filebeat
+    heritage: {{ .Release.Service | quote }}
+    release:  {{ .Release.Name | quote }}
+    chart:    "{{ .Chart.Name }}-{{ .Chart.Version }}"
+spec:
+  template:
+    metadata:
+      labels: 
+        solution: l1_logging
+        product:  filebeat
+        heritage: {{ .Release.Service | quote }}
+        release:  {{ .Release.Name | quote }}
+        chart:    "{{ .Chart.Name }}-{{ .Chart.Version }}"
+    spec:
+      containers:
+        - name: opendc-filebeat
+          image: {{ .Values.filebeat_image }}:{{ .Values.filebeat_tag }}
+          imagePullPolicy: {{ default "IfNotPresent" .Values.pullPolicy }}
+          resources:
+            limits:
+              cpu: 100m
+            requests:
+              cpu: 100m
+          volumeMounts:
+            - name:      containers
+              mountPath: /var/log/containers/
+            - name:      pods
+              mountPath: /var/log/pods/
+            - name:      docker
+              mountPath: /var/lib/docker/containers/
+            - name:      opendc-filebeat
+              mountPath: /etc/filebeat
+      volumes:
+        - name: containers
+          hostPath:
+            path: /var/log/containers/
+        - name: pods
+          hostPath:
+            path: /var/log/pods/
+        - name: docker
+          hostPath:
+            path: /var/lib/docker/containers/
+        - name: opendc-filebeat
+          configMap:
+            name: opendc-filebeat
