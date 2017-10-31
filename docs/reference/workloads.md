@@ -85,7 +85,7 @@ Helm chart can be found *[here](https://github.com/kubernetes/charts/tree/master
 
 ```console
 $ helm install --name dashboard --namespace kube-system \
-  -f charts-values/dashboard/values.yaml 
+  -f charts-values/dashboard/values.yaml \
   stable/kubernetes-dashboard --version 0.4.0
 ```
 
@@ -93,7 +93,7 @@ $ helm install --name dashboard --namespace kube-system \
 
 ```console
 $ helm upgrade dashboard -f charts-values/dashboard/values.yaml \
-  stable/kubernetes-dashboard
+  stable/kubernetes-dashboard --version 0.4.0
 ```
 
 
